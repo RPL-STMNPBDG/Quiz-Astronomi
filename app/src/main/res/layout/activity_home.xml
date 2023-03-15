@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="95px"
+            android:layout_height="95px"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/judul"
+            android:layout_width="517px"
+            android:layout_height="55px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/text" />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="95px"
+            android:layout_height="95px"
+            android:src="@drawable/setting"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/kucing"
+            android:layout_width="527px"
+            android:layout_height="527px"
+            android:src="@drawable/kucing2"/>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/akun"
+            android:layout_width="950px"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp"
+            android:layout_marginTop="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="236px"
+                    android:layout_height="236px"
+                    android:src="@drawable/avatar"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shakila Aulia"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="#44357C"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level : 100"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="#44357C"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/easy"
+                android:layout_width="846px"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150px"
+                        android:layout_height="145px"
+                        android:src="@drawable/easy"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EASY"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="#44357C"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/medium"
+                android:layout_width="846px"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150px"
+                        android:layout_height="145px"
+                        android:src="@drawable/medium"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MEDIUM"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="#44357C"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hard"
+                android:layout_width="846px"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150px"
+                        android:layout_height="145px"
+                        android:src="@drawable/hard"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HARD"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="#44357C"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
